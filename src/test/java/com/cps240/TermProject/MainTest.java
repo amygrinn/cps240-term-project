@@ -1,10 +1,12 @@
 package com.cps240.TermProject;
 
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.Test;
+
 class MainTest {
-    @Test void appHasAGreeting() {
-        assertTrue(true);
-    }
+  @Test
+  void appHasAGreeting() {
+    assertTrue(true);
+  }
 }
