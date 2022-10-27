@@ -1,3 +1,7 @@
+# Ideas Lab
+
+Thu, Oct 27, 2022
+
 # Roles
 
 ## Dylan
