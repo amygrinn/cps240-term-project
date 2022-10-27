@@ -13,7 +13,7 @@ jobs:
           java-version: 17
           distribution: temurin
           cache: gradle
-      - run: ./gradlew test jar --no-daemon
+      - run: ./gradlew jar --no-daemon
       - uses: actions/upload-artifact@v3
         with:
           name: ${{ matrix.os }}-build
