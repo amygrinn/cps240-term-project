@@ -5,15 +5,11 @@
 
 ## Running
 
-On Windows, run the command `gradlew run`.
-
-For all others, run `./gradlew run`.
+Run the command `./gradlew run`.
 
 ## Building
 
-On Windows, run the command `gradlew jar`.
-
-For all others, run `./gradlew jar`.
+Run the command `./gradlew jar`.
 
 This will build the jar file `build\libs\cps240-term-project.jar`. In
 order to run this file, use the command `java -jar
@@ -21,12 +17,10 @@ build\libs\cps240-term-project.jar`.
 
 ## Test & Lint
 
-On Windows, run the command `gradlew check`.
-
-For all others, run `./gradlew check`.
+Run the command `./gradlew check`.
 
 This will run all tests and check code formatting. In order to fix
-code formatting automatically, use the command `gradlew fix`.
+code formatting automatically, use the command `./gradlew fix`.
 
 ## Roles
 
