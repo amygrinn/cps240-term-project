@@ -10,4 +10,4 @@ jobs:
           java-version: 17
           distribution: temurin
           cache: gradle
-      - run: ./gradlew check --no-daemon
+      - run: ./gradlew check -Pheadless --no-daemon

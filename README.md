@@ -22,6 +22,9 @@ Run the command `./gradlew check`.
 This will run all tests and check code formatting. In order to fix
 code formatting automatically, use the command `./gradlew fix`.
 
+To run all tests without opening a graphical window, use the command
+`./gradlew check -Pheadless`.
+
 ## Roles
 
 ### Dylan
