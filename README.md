@@ -25,6 +25,18 @@ code formatting automatically, use the command `./gradlew fix`.
 To run all tests without opening a graphical window, use the command
 `./gradlew check -Pheadless`.
 
+## Debugging using VSCode
+
+To add a breakpoint, click to the left of the line number and a red
+dot will appear.
+
+To debug the main app, select the 'Run and Debug' panel, select
+'Launch Launcher' from the dropdown menu, and press the play button.
+
+To debug the tests, install the plugin 'Gradle for Java'. Open the
+'Gradle' panel, expand 'Tasks -> verification', and click the 'Debug
+Task' button next to the 'test' task.
+
 ## Roles
 
 ### Dylan
