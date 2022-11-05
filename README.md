@@ -3,6 +3,10 @@
 [![Build](https://github.com/taylorgrinn/cps240-term-project/actions/workflows/build.yaml/badge.svg)](https://github.com/taylorgrinn/cps240-term-project/actions/workflows/build.yaml)
 [![Lint & Test](https://github.com/taylorgrinn/cps240-term-project/actions/workflows/check.yaml/badge.svg)](https://github.com/taylorgrinn/cps240-term-project/actions/workflows/check.yaml)
 
+## UML Diagram
+
+[draw.io](https://app.diagrams.net/?mode=github#Htaylorgrinn%2Fcps240-term-project%2Fmain%2Fdoc%2Fuml.drawio)
+
 ## Running
 
 Run the command `./gradlew run`.
