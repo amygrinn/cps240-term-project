@@ -54,7 +54,7 @@ tasks.named('test') {
 }
 
 javafx {
-    version = "16"
+    version = '19'
     modules = [ 'javafx.controls' ]
 }
 
