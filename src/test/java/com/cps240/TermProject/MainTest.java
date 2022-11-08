@@ -17,7 +17,7 @@ class MainTest {
   }
 
   @Test
-  void has_connect_four_button() {
-    FxAssert.verifyThat(".button", LabeledMatchers.hasText("Connect 4"));
+  void has_connect_checkers_button() {
+    FxAssert.verifyThat(".button", LabeledMatchers.hasText("Checkers"));
   }
 }
