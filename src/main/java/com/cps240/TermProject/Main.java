@@ -26,7 +26,7 @@ public class Main extends Application {
     tf.setMaxWidth(200);
 
     label = new Label("Please Select Your Game");
-    button = new Button("Game time");
+    button = new Button("Checkers");
 
     button.setOnAction(
         new EventHandler<ActionEvent>() {
