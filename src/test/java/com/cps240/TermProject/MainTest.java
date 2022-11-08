@@ -1,27 +1,23 @@
 package com.cps240.TermProject;
 
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import org.junit.jupiter.api.Test;
-import org.testfx.assertions.api.Assertions;
-import org.testfx.framework.junit5.ApplicationTest;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.testfx.api.FxAssert;
+import org.testfx.framework.junit5.ApplicationExtension;
+import org.testfx.framework.junit5.Start;
+import org.testfx.matcher.control.LabeledMatchers;
 
-class MainTest extends ApplicationTest {
-  private Button button;
-
-  @Override
-  public void start(Stage stage) {
-    button = new Button("click me!");
-    button.setOnAction(ev -> button.setText("clicked!"));
-    stage.setScene(new Scene(new StackPane(button), 100, 100));
-    stage.show();
+@ExtendWith(ApplicationExtension.class)
+class MainTest {
+  @Start
+  private void start(Stage stage) {
+    Main main = new Main();
+    main.start(stage);
   }
 
   @Test
-  void when_button_is_clicked_text_changes() {
-    clickOn(".button");
-    Assertions.assertThat(button).hasText("clicked!");
+  void has_connect_four_button() {
+    FxAssert.verifyThat(".button", LabeledMatchers.hasText("Connect 4"));
   }
 }
