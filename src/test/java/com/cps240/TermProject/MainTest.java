@@ -20,6 +20,6 @@ class MainTest {
   @Test
   void has_a_button_for_each_game(FxRobot robot) {
     NodeQuery query = robot.lookup(".button");
-    Assertions.assertThat(query.queryAll().size()).isEqualTo(4);
+    Assertions.assertThat(query.queryAll().size()).isEqualTo(3);
   }
 }
