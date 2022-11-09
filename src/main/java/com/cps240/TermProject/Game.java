@@ -27,10 +27,8 @@ public abstract class Game<M extends Move> {
 
     updateStage(stage);
 
-    if (board.isComplete())
-      displayWin(stage);
-    else
-      displayMoves(stage, board.generateMoves());
+    if (board.isComplete()) displayWin(stage);
+    else displayMoves(stage, board.generateMoves());
   }
 
   public void undo() {
@@ -55,5 +53,4 @@ public abstract class Game<M extends Move> {
   public static void ConnectFour() {
     // TODO: do something
   }
-
 }
