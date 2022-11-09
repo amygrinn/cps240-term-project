@@ -72,7 +72,6 @@ to implement 2-4 of the following games:
 
 - Connect Four
 - Checkers
-- Snake
 - Hangman
 
 We reserve the right to add or remove games from this list.
