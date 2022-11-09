@@ -1,4 +1,4 @@
-name: Lint & Test
+name: Test
 on: push
 jobs:
   gradle:
@@ -10,4 +10,4 @@ jobs:
           java-version: 17
           distribution: temurin
           cache: gradle
-      - run: ./gradlew check -Pheadless --no-daemon
+      - run: ./gradlew test -Pheadless --no-daemon

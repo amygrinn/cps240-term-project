@@ -1,7 +1,8 @@
 # Unnamed Term Project
 
+[![Lint](https://github.com/taylorgrinn/cps240-term-project/actions/workflows/lint.yaml/badge.svg)](https://github.com/taylorgrinn/cps240-term-project/actions/workflows/lint.yaml)
+[![Test](https://github.com/taylorgrinn/cps240-term-project/actions/workflows/test.yaml/badge.svg)](https://github.com/taylorgrinn/cps240-term-project/actions/workflows/test.yaml)
 [![Build](https://github.com/taylorgrinn/cps240-term-project/actions/workflows/build.yaml/badge.svg)](https://github.com/taylorgrinn/cps240-term-project/actions/workflows/build.yaml)
-[![Lint & Test](https://github.com/taylorgrinn/cps240-term-project/actions/workflows/check.yaml/badge.svg)](https://github.com/taylorgrinn/cps240-term-project/actions/workflows/check.yaml)
 
 ## UML Diagram
 
