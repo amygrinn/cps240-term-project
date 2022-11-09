@@ -2,7 +2,7 @@ package com.cps240.TermProject;
 
 import javafx.stage.Stage;
 
-public class Hangman extends Game<HangmanMove> {
+public class Hangman extends Game<HangmanMove, HangmanBoard> {
   @Override
   protected void updateStage(Stage stage) {
     throw new NotImplementedException();

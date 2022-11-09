@@ -2,9 +2,9 @@ package com.cps240.TermProject;
 
 import javafx.stage.Stage;
 
-public abstract class Game<M extends Move> {
+public abstract class Game<M extends Move, B extends Board<M>> {
   private Stage stage;
-  protected Board<M> board;
+  protected B board;
 
   protected abstract void updateStage(Stage stage);
 

@@ -2,7 +2,7 @@ package com.cps240.TermProject;
 
 import javafx.stage.Stage;
 
-public class ConnectFour extends Game<ConnectFourMove> {
+public class ConnectFour extends Game<ConnectFourMove, ConnectFourBoard> {
   @Override
   protected void updateStage(Stage stage) {
     throw new NotImplementedException();
