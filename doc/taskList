@@ -1,7 +1,25 @@
-Make the interfaces: MoveGenerator and Move
+DONE: Make the interfaces: MoveGenerator and Move
 
-Create a board and a game
+TODO: Builder pattern [0/3]              Trevin?
+      TODO: Create GameBuilder class for builder pattern
+      TODO: Create GameSelect which uses the builder and javafx
+      TODO: Use GameSelect within Main
 
-Implementing each of the Moves and MoveGenerators
+TODO: Implement Checkers [0/3]		 Jason?
+      TODO: Implement CheckersBoard
+      TODO: Implement CheckersMoveGenerator
+      TODO: Implement Checkers (javafx)
 
-javafx applications
+TODO: Implement ConnectFour [0/3]        Dylan?
+      TODO: Implement ConnectFourBoard
+      TODO: Implement ConnectFourMoveGenerator
+      TODO: Implement ConnectFour (javafx)
+
+TODO: Implement Hangman [0/3]
+      TODO: Implement HangmanBoard
+      TODO: Implement HangmanMoveGenerator
+      TODO: Implement Hangman (javafx)
+
+TODO: Implement high scores
+
+TODO: Unit testing                       Taylor
