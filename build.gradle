@@ -1,74 +1,74 @@
 // -*- mode: groovy; -*-
 plugins {
-    id 'application'
-    id 'org.openjfx.javafxplugin' version '0.0.13'
-    id 'com.diffplug.spotless' version '6.11.0'
+  id 'application'
+  id 'org.openjfx.javafxplugin' version '0.0.13'
+  id 'com.diffplug.spotless' version '6.11.0'
 }
 
 spotless {
-    format 'misc', {
-        target '*.gradle', '*.md', '.gitignore', '*.yaml'
+  format 'misc', {
+    target '*.gradle', '*.md', '.gitignore', '**/*.yaml'
 
-        trimTrailingWhitespace()
-        indentWithSpaces(2)
-        endWithNewline()
-    }
+    trimTrailingWhitespace()
+    indentWithSpaces(2)
+    endWithNewline()
+  }
 
-    java {
-        importOrder()
-        removeUnusedImports()
-        googleJavaFormat()
-        formatAnnotations()
-        indentWithSpaces(2)
-    }
+  java {
+    importOrder()
+    removeUnusedImports()
+    googleJavaFormat()
+    formatAnnotations()
+    indentWithSpaces(2)
+  }
 }
 
 tasks.register('fix') {
-    setGroup('Verification')
-    setDescription('Alias for spotlessApply')
-    dependsOn 'spotlessApply'
+  setGroup('Verification')
+  setDescription('Alias for spotlessApply')
+  dependsOn 'spotlessApply'
 }
 
 repositories {
-    mavenCentral()
+  mavenCentral()
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
-    testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.13.2'
-    testImplementation 'org.testfx:testfx-core:4.0.16-alpha'
-    testImplementation 'org.testfx:testfx-junit5:4.0.16-alpha'
-    testImplementation 'org.testfx:openjfx-monocle:jdk-12.0.1+2'
+  testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
+  testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.13.2'
+  testImplementation 'org.testfx:testfx-core:4.0.16-alpha'
+  testImplementation 'org.testfx:testfx-junit5:4.0.16-alpha'
+  testImplementation 'org.testfx:openjfx-monocle:jdk-12.0.1+2'
 }
 
 mainClassName = 'com.cps240.TermProject.Main'
 
 tasks.named('test') {
-    if (project.hasProperty('headless')) {
-        systemProperty 'testfx.robot', 'glass'
-        systemProperty 'glass.platform', 'Monocle'
-        systemProperty 'monocle.platform', 'Headless'
-        systemProperty 'prism.order', 'sw'
-    }
-    useJUnitPlatform()
+  if (project.hasProperty('headless')) {
+    systemProperty 'testfx.robot', 'glass'
+    systemProperty 'glass.platform', 'Monocle'
+    systemProperty 'monocle.platform', 'Headless'
+    systemProperty 'prism.order', 'sw'
+  }
+  useJUnitPlatform()
 }
 
 javafx {
-    version = '19'
-    modules = [ 'javafx.controls' ]
+  version = '19'
+  modules = [ 'javafx.controls' ]
 }
 
 jar {
-    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+  duplicatesStrategy = DuplicatesStrategy.INCLUDE
 
-    manifest {
-        attributes 'Main-Class': 'com.cps240.TermProject.Launcher'
-    }
-    from {
-        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
-    }
+  manifest {
+    attributes 'Main-Class': 'com.cps240.TermProject.Launcher'
+  }
+  from {
+    configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+  }
 }
 
 tasks.named('javadoc') {
-    source = sourceSets.main.allJava
+  source = sourceSets.main.allJava
 }
